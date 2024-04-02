@@ -31,8 +31,6 @@ def main():
 def generate_image(prompt, pipe):
     image_bytes = pipe(prompt).images[0]
     print(image_bytes)
-      # Assuming pipe returns a list of images, get the first one
-    #image = Image.open(BytesIO(image_bytes))
     return image_bytes
 
 if __name__ == '__main__':
